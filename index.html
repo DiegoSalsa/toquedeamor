@@ -32,9 +32,24 @@
         <i class="ph ph-whatsapp-logo text-lg"></i>
         Reservar
       </a>
-      <button class="md:hidden text-chocolate text-2xl">
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-chocolate text-2xl focus:outline-none" id="mobile-menu-btn">
         <i class="ph ph-list"></i>
       </button>
+    </div>
+    <!-- Mobile Menu Container -->
+    <div class="md:hidden hidden bg-cream/95 backdrop-blur-md border-t border-stone-200" id="mobile-menu">
+      <div class="flex flex-col p-6 space-y-4 font-medium text-stone-600 text-center">
+        <a href="#inicio" class="hover:text-caramel transition-colors">Inicio</a>
+        <a href="#catalogo" class="hover:text-caramel transition-colors">Catálogo</a>
+        <a href="#sobre-mi" class="hover:text-caramel transition-colors">Sobre Tamy</a>
+        <a href="#contacto" class="hover:text-caramel transition-colors">Contacto</a>
+        <a href="https://wa.me/56937817639" target="_blank"
+          class="inline-flex items-center justify-center gap-2 text-chocolate font-bold mt-2">
+          <i class="ph ph-whatsapp-logo text-lg"></i>
+          Reservar por WhatsApp
+        </a>
+      </div>
     </div>
   </nav>
 
