@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/brand_favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toque de Amor | Pastelería Artesanal</title>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <meta name="description"
+    content="Pastelería 100% casera, hecha con amor y dedicación en Puerto Montt. Tortas, kuchenes y desayunos sorpresa." />
+</head>
+
+<body class="antialiased">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-cream/90 backdrop-blur-md border-b border-stone-200 transition-all duration-300"
+    id="navbar">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="font-serif text-2xl font-bold text-chocolate tracking-wide">
+        Toque de Amor
+      </a>
+      <div class="hidden md:flex space-x-8 text-stone-600 font-medium">
+        <a href="#inicio" class="hover:text-caramel transition-colors">Inicio</a>
+        <a href="#catalogo" class="hover:text-caramel transition-colors">Catálogo</a>
+        <a href="#sobre-mi" class="hover:text-caramel transition-colors">Sobre Tamy</a>
+        <a href="#contacto" class="hover:text-caramel transition-colors">Contacto</a>
+      </div>
+      <a href="https://wa.me/56937817639" target="_blank"
+        class="hidden md:flex items-center gap-2 bg-chocolate text-cream px-5 py-2 rounded-full font-medium hover:bg-caramel transition-colors duration-300">
+        <i class="ph ph-whatsapp-logo text-lg"></i>
+        Reservar
+      </a>
+      <button class="md:hidden text-chocolate text-2xl">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="/images/hero.png" alt="Torta Artesanal" class="w-full h-full object-cover brightness-[0.7]">
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto text-cream animate-fade-in-up">
+      <span class="block font-serif italic text-2xl md:text-3xl mb-4 text-soft-pink">Hecho con el corazón</span>
+      <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        Preparaciones hechas <br /><span class="text-caramel">con amor</span>
+      </h1>
+      <p class="text-lg md:text-xl text-stone-200 mb-8 max-w-2xl mx-auto font-light">
+        Pastelería 100% casera y artesanal. Descubre el sabor de la dedicación en cada bocado.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#catalogo"
+          class="bg-soft-pink text-chocolate px-8 py-3 rounded-full font-semibold hover:bg-pink-200 transition-colors duration-300 flex items-center justify-center gap-2">
+          Ver Delicias
+          <i class="ph ph-caret-down"></i>
+        </a>
+        <a href="https://wa.me/56937817639" target="_blank"
+          class="border-2 border-cream text-cream px-8 py-3 rounded-full font-semibold hover:bg-cream hover:text-chocolate transition-colors duration-300 flex items-center justify-center gap-2">
+          Pedir por WhatsApp
+          <i class="ph ph-whatsapp-logo"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Section (Bento Grid) -->
+  <section id="catalogo" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-caramel font-medium uppercase tracking-widest text-sm">Nuestro Menú</span>
+        <h2 class="font-serif text-4xl md:text-5xl text-chocolate mt-2 mb-4">Catálogo 2025</h2>
+        <p class="text-stone-500 max-w-xl mx-auto">Selecciona tus favoritos y haz tu pedido con anticipación.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[800px]">
+
+        <!-- Large Item: Tortas -->
+        <div class="group relative md:col-span-2 md:row-span-2 overflow-hidden rounded-3xl cursor-pointer"
+          data-category="tortas">
+          <img src="/images/torta.png" alt="Tortas Artesanales"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-chocolate/80 via-transparent to-transparent flex flex-col justify-end p-8">
+            <h3 class="text-3xl font-serif text-white mb-2">Tortas Soñadas</h3>
+            <p
+              class="text-stone-200 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+              Antonia, Martina, Amor y más especialidades.</p>
+            <span class="inline-block bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-lg text-sm w-fit">Ver
+              Variedades &rarr;</span>
+          </div>
+        </div>
+
+        <!-- Wide Item: Desayuno -->
+        <div class="group relative md:col-span-2 overflow-hidden rounded-3xl cursor-pointer" data-category="desayuno">
+          <img src="/images/desayuno.png" alt="Desayunos Sorpresa"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-chocolate/80 via-transparent to-transparent flex flex-col justify-end p-8">
+            <h3 class="text-2xl font-serif text-white mb-1">Desayuno "Toque de Amor"</h3>
+            <p class="text-stone-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">La mejor
+              forma de empezar el día.</p>
+          </div>
+        </div>
+
+        <!-- Small Item: Kuchenes -->
+        <div class="group relative md:col-span-1 overflow-hidden rounded-3xl cursor-pointer" data-category="kuchen">
+          <img src="/images/kuchen.png" alt="Kuchenes"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-chocolate/80 via-transparent to-transparent flex flex-col justify-end p-6">
+            <h3 class="text-xl font-serif text-white">Kuchenes del Sur</h3>
+          </div>
+        </div>
+
+        <!-- Small Item: Alfajores -->
+        <div class="group relative md:col-span-1 overflow-hidden rounded-3xl cursor-pointer" data-category="alfajores">
+          <img src="/images/alfajores.png" alt="Alfajores y Galletas"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-chocolate/80 via-transparent to-transparent flex flex-col justify-end p-6">
+            <h3 class="text-xl font-serif text-white">Dulces Detalles</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre-mi" class="py-20 bg-cream">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center gap-16">
+        <div class="w-full md:w-1/2">
+          <div class="relative">
+            <div class="absolute -top-4 -left-4 w-24 h-24 bg-soft-pink rounded-full -z-10 opacity-60"></div>
+            <img src="/images/real_tamy.jpg" alt="Tamy"
+              class="rounded-2xl shadow-xl w-full rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg max-w-xs hidden md:block">
+              <p class="font-serif italic text-chocolate text-lg">"La repostería es mi forma de entregar felicidad."</p>
+              <div class="flex gap-1 mt-2 text-caramel">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <span class="text-caramel font-medium uppercase tracking-widest text-sm">La cocina de Tamy</span>
+          <h2 class="font-serif text-4xl text-chocolate mt-2 mb-6">Hola, soy Tamy</h2>
+          <p class="text-stone-600 mb-6 leading-relaxed">
+            Soy Tamy Krakowiak, fundadora de <strong>“Toque de Amor”</strong>. Mi pasión por la repostería me llevó a
+            crear este espacio donde elaboro deliciosos pasteles y tortas con ingredientes de alta calidad.
+          </p>
+          <p class="text-stone-600 mb-8 leading-relaxed">
+            En <strong>@toquedeamor.cl</strong>, comparto mis creaciones y momentos especiales, inspirando a otros con
+            mi amor por la pastelería. Cada una de nuestras tortas es 100% casera, elaborada con dedicación y cariño.
+          </p>
+          <a href="#contacto"
+            class="text-chocolate font-semibold border-b-2 border-soft-pink hover:text-caramel hover:border-caramel transition-colors pb-1 inline-flex items-center gap-2">
+            Contáctame para tu próximo evento
+            <i class="ph ph-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policies / Info Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Policy 1 -->
+        <div class="bg-cream/50 p-6 rounded-2xl border border-stone-100 hover:shadow-lg transition-shadow text-center">
+          <div
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-caramel shadow-sm">
+            <i class="ph ph-clock"></i>
+          </div>
+          <h3 class="font-serif text-lg text-chocolate mb-2">Anticipación</h3>
+          <p class="text-stone-500 text-xs">
+            <strong>Tortas/Kuchen:</strong> 72 hrs.<br>
+            <strong>Desayunos:</strong> 24 hrs.<br>
+            <strong>Cafetería:</strong> 48 hrs.
+          </p>
+        </div>
+        <!-- Policy 2 -->
+        <div class="bg-cream/50 p-6 rounded-2xl border border-stone-100 hover:shadow-lg transition-shadow text-center">
+          <div
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-caramel shadow-sm">
+            <i class="ph ph-storefront"></i>
+          </div>
+          <h3 class="font-serif text-lg text-chocolate mb-2">Retiro</h3>
+          <p class="text-stone-500 text-xs text-balance">
+            Av. 21 de Mayo 2163, Concepción.<br>
+            <strong>Lun-Vie:</strong> 12:00 - 17:00 hrs.
+          </p>
+        </div>
+        <!-- Policy 3 -->
+        <div class="bg-cream/50 p-6 rounded-2xl border border-stone-100 hover:shadow-lg transition-shadow text-center">
+          <div
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-caramel shadow-sm">
+            <i class="ph ph-moped"></i>
+          </div>
+          <h3 class="font-serif text-lg text-chocolate mb-2">Delivery</h3>
+          <p class="text-stone-500 text-xs">
+            Empresa externa.<br>
+            <strong>Lun a Sáb:</strong> 08:00 - 11:00 hrs.
+          </p>
+        </div>
+        <!-- Policy 4 -->
+        <div class="bg-cream/50 p-6 rounded-2xl border border-stone-100 hover:shadow-lg transition-shadow text-center">
+          <div
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl text-caramel shadow-sm">
+            <i class="ph ph-currency-circle-dollar"></i>
+          </div>
+          <h3 class="font-serif text-lg text-chocolate mb-2">Pago</h3>
+          <p class="text-stone-500 text-xs">
+            Totalidad del pedido al<br><strong>hacer la reserva</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Modal -->
+  <div id="product-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-chocolate/60 backdrop-blur-sm transition-opacity opacity-0" id="modal-backdrop">
+    </div>
+
+    <!-- Modal Panel -->
+    <div class="fixed inset-0 z-10 overflow-y-auto">
+      <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+        <div
+          class="relative transform overflow-hidden rounded-2xl bg-cream text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-2xl opacity-0 translate-y-4 scale-95"
+          id="modal-panel">
+
+          <!-- Close Button -->
+          <button class="absolute top-4 right-4 text-chocolate hover:text-caramel z-20" id="close-modal">
+            <i class="ph ph-x text-2xl"></i>
+          </button>
+
+          <!-- Content -->
+          <div class="px-6 py-8 sm:p-10">
+            <div class="text-center mb-8">
+              <span class="text-caramel font-medium uppercase tracking-widest text-xs mb-2 block"
+                id="modal-category">Categoría</span>
+              <h3 class="text-3xl font-serif text-chocolate leading-6" id="modal-title">Título del Producto</h3>
+              <p class="mt-2 text-sm text-stone-500" id="modal-description">Descripción general de la categoría.</p>
+            </div>
+
+            <div class="divide-y divide-stone-200" id="modal-items">
+              <!-- Items will be injected here via JS -->
+            </div>
+          </div>
+
+          <div class="bg-white/50 px-6 py-4 sm:flex sm:flex-row-reverse sm:px-10">
+            <button type="button"
+              class="mt-3 inline-flex w-full justify-center rounded-full bg-white px-3 py-2 text-sm font-semibold text-stone-900 shadow-sm ring-1 ring-inset ring-stone-300 hover:bg-stone-50 sm:mt-0 sm:w-auto"
+              id="close-modal-btn">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contacto" class="bg-chocolate text-cream py-16">
+    <div class="container mx-auto px-6">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 text-center md:text-left">
+
+        <div>
+          <h3 class="font-serif text-3xl font-bold mb-4">Toque de Amor</h3>
+          <p class="text-stone-300 max-w-sm">Pastelería artesanal que acompaña tus mejores momentos con dulzura y
+            elegancia.</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h4 class="font-serif text-xl text-soft-pink">Ubicación y Horarios</h4>
+          <div class="text-stone-300 text-sm space-y-2">
+            <p class="flex items-start gap-2">
+              <i class="ph ph-map-pin text-lg mt-0.5"></i>
+              Av. 21 de Mayo 2163, Local 2,<br>Concepción.
+            </p>
+            <p class="flex items-start gap-2">
+              <i class="ph ph-whatsapp-logo text-lg mt-0.5"></i>
+              <span class="grid gap-1">
+                <span><strong>Whatsapp:</strong></span>
+                <span>Lun-Vie: 08:00 - 19:30</span>
+                <span>Sábado: 08:00 - 15:30</span>
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h4 class="font-serif text-xl text-soft-pink">Contacto</h4>
+          <a href="https://wa.me/56937817639" target="_blank"
+            class="flex items-center justify-center md:justify-start gap-3 text-stone-300 hover:text-white transition-colors">
+            <i class="ph ph-whatsapp-logo text-xl"></i>
+            +56 9 3781 7639
+          </a>
+          <a href="https://instagram.com" target="_blank"
+            class="flex items-center justify-center md:justify-start gap-3 text-stone-300 hover:text-white transition-colors">
+            <i class="ph ph-instagram-logo text-xl"></i>
+            @toquedeamor.pasteleria
+          </a>
+          <a href="mailto:contacto@toquedeamor.cl"
+            class="flex items-center justify-center md:justify-start gap-3 text-stone-300 hover:text-white transition-colors">
+            <i class="ph ph-envelope text-xl"></i>
+            contacto@toquedeamor.cl
+          </a>
+        </div>
+
+      </div>
+
+      <div
+        class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-stone-400 text-sm">
+        <p>&copy; 2025 Toque de Amor. Todos los derechos reservados.</p>
+        <p>Diseñado con <i class="ph-fill ph-heart text-red-400 inline-block mx-1"></i> por <a
+            href="https://wa.me/56934908579" target="_blank" class="hover:text-caramel transition-colors">Diego
+            Guzmán</a></p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
