@@ -17,7 +17,7 @@ const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 
 // --- Whatsapp Config ---
-const PHONE_NUMBER = "56937817639"; // Toque de Amor real number
+const PHONE_NUMBER = "56900000000"; // Demo number
 
 // --- Modal Functions ---
 function openModal(categoryKey) {
@@ -38,7 +38,7 @@ function openModal(categoryKey) {
       </div>
       <div class="text-right w-full sm:w-auto flex flex-row sm:flex-col justify-between items-center sm:items-end mt-2 sm:mt-0">
         <span class="text-sm font-semibold text-chocolate block mb-1">${item.price}</span>
-        <a href="https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(`Hola Tamy, me gustaría pedir la ${item.name}.`)}" 
+        <a href="https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(`Hola, me gustaría pedir la ${item.name}.`)}" 
            target="_blank"
            class="inline-flex items-center gap-1 text-xs bg-green-500 text-white px-3 py-1 rounded-full hover:bg-green-600 transition-colors">
           Pedir <i class="ph-fill ph-whatsapp-logo"></i>

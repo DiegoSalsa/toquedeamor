@@ -1,9 +1,9 @@
-# Toque de Amor - Landing Page
+# Pastelería Demo - Landing Page
 
-Bienvenido al repositorio del sitio web oficial de **Toque de Amor**, pastelería artesanal en Concepción.
+Bienvenido al repositorio del sitio web de **Pastelería Demo**, pastelería artesanal.
 
 ## 📋 Descripción
-Landing page moderna y responsiva diseñada para mostrar el catálogo 2025, facilitar pedidos vía WhatsApp y destacar la identidad de la marca.
+Landing page moderna y responsiva diseñada para mostrar el catálogo, facilitar pedidos vía WhatsApp y destacar la identidad de la marca.
 
 ## 🛠️ Tecnologías
 - **HTML5** Semántico.

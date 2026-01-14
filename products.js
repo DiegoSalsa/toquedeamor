@@ -19,17 +19,17 @@ export const products = {
                 price: "$32.000 (15 p.) / $45.000 (20 p.) / $52.000 (25 p.)"
             },
             {
-                name: "Torta Choco Amor",
+                name: "Torta Choco Love",
                 description: "Hojarascas con manjar, chantilly con frambuesas y ganache de chocolate. Decoración Naked Cake.",
                 price: "$32.000 (15 p.) / $45.000 (20 p.) / $52.000 (25 p.)"
             },
             {
-                name: "Torta Amor Tradicional",
+                name: "Torta Hojarasca Tradicional",
                 description: "Finas capas de hojarasca rellenas de manjar de campo, crema chantilly con frambuesas naturales y crema pastelera casera. Naked Cake.",
                 price: "$32.000 (15 p.) / $45.000 (20 p.) / $52.000 (25 p.)"
             },
             {
-                name: "Torta Amor Bizcocho",
+                name: "Torta Bizcocho Manjar",
                 description: "Suave bizcocho con manjar de campo, crema chantilly con frambuesas naturales y crema pastelera casera.",
                 price: "$35.000 (15 p.) / $47.000 (20 p.) / $54.000 (25 p.)"
             },
@@ -106,17 +106,17 @@ export const products = {
         description: "En bandeja de madera vintage pintada a mano.",
         items: [
             {
-                name: "Desayuno Toque de Amor",
+                name: "Desayuno Especial",
                 description: "Bandeja vintage, Tazón, Jugo, Kuchen día, Dulce semana, Yogurt/Granola, 2 Sándwiches (Ciabatta/Baguette), Té/Café, Cubiertos.",
                 price: "$33.490"
             },
             {
-                name: "Desayuno Amor Compartido (Doble)",
+                name: "Desayuno Compartido (Doble)",
                 description: "Para 2 personas. Todo doble: Tazones, Jugos, Kuchenes, Sándwiches, etc.",
                 price: "$51.990"
             },
             {
-                name: "Desayuno Amor Ideal",
+                name: "Desayuno Ideal",
                 description: "Incluye Leche, Frutos Secos, Ensalada frutas, Frasco Manjar Blanco, además del contenido estándar.",
                 price: "$45.490"
             }
